@@ -44,6 +44,9 @@ nmap <silent> ,ev :e $MYVIMRC<cr>
 " 's'ource 'v'imrc)
 nmap <silent> ,sv :so $MYVIMRC<cr>
 
+" Manual mapping for Command-T
+nmap <silent> ,t :CommandT<cr>
+
 ""Java anonymous classes. Sometimes, you have to use them.
 set cinoptions+=j1
 let java_mark_braces_in_parens_as_errors=1
@@ -68,6 +71,7 @@ set stl=%f\ %m\ %r\ Line:\ %l/%L[%p%%]\ Col:\ %c\ Buf:\ #%n\ [%b][0x%B]
 
 "To use Pathogen plugin (used to install Solarized)
 call pathogen#infect()
+call pathogen#helptags()
 
 "To use Solarized-colors
 set background=light
